@@ -20,6 +20,9 @@ do
 	remtxt="_CONTROL.txt"
 	rostopic echo -b $file -p /control_readings > $f$remtxt
 	echo "creating folder"
+	remtxt="_DATA.txt"
+	rostopic echo -b $file -p /data_readings > $f$remtxt
+	echo "creating folder"
 	mkdir $f
 	ext="_*"
 	rm $file
