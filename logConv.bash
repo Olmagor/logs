@@ -10,9 +10,6 @@ do
 	echo "imu readings"
 	imutxt="_IMU.txt"
 	rostopic echo -b $file -p /imu_readings > $f$imutxt
-	echo "mag readings"
-	magtxt="_MAG.txt"
-	rostopic echo -b $file -p /mag_readings > $f$magtxt
 	echo "remote readings"
 	remtxt="_REMOTE.txt"
 	rostopic echo -b $file -p /remote_readings > $f$remtxt
