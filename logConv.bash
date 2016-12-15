@@ -22,9 +22,9 @@ do
 	echo "creating folder"
 	mkdir $f
 	ext="_*"
-	rm $file
+	mv $file $f/
 	mv $f$ext $f/
-	mv $f ../logs/
+	sudo mv $f ../logs/
 	echo "done"
 done
 
